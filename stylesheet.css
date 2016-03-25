@@ -11,9 +11,9 @@ body, html {
 }
 
 x-gif{
-	transform:scale(0.8,0.8);
+	/*transform:scale(0.8,0.8);
 	margin-top:calc(-831px * 0.1);
-	margin-bottom:calc(-831px * 0.1);
+	margin-bottom:calc(-831px * 0.1);*/
 }
 
 h2, h3{
