@@ -14,7 +14,7 @@ body, html {
 	border:1px solid black;
 }
 
-x-gif {
+x-gif, x-gif * {
 	height:60vh;
 	width:calc(60vh / 839 * 913);
 }
