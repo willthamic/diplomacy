@@ -1,0 +1,12 @@
+body, html {
+	margin:0;
+	padding:0;
+}
+
+.gif-container {
+	display:flex;
+	flex-direction:column;
+	margin:auto;
+	border:1px solid black;
+	align-items:center;
+}
