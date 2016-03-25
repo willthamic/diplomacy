@@ -13,3 +13,8 @@ body, html {
 	margin:auto;
 	border:1px solid black;
 }
+
+x-gif {
+	height:60vh;
+	width:calc(60vh / 839 * 913);
+}
