@@ -10,3 +10,7 @@ body, html {
 	border:1px solid black;
 	align-items:center;
 }
+
+x-gif {
+	height:60vh;
+}
