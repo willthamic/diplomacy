@@ -7,24 +7,54 @@
 		<link rel="stylesheet" href="stylesheet.css">
 		<script src="script.js"></script>
 		<script src="jquery.min.js"></script>
-		<script>
-		if ('registerElement' in document
-			&& 'createShadowRoot' in HTMLElement.prototype
-			&& 'import' in document.createElement('link')
-			&& 'content' in document.createElement('template')) {
-			// We're using a browser with native WC support!
-		} else {
-			document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/platform.js"><\/script>')
-		}
-		</script>
-		<link rel="import" href="x-gif.html">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="gif-container">
-			<h2>To Widen the Community</h2>
-			<h3>Victor: Will, Turkey</h3>
-			<x-gif id="testgif" src="assets\To-Widen-The-Community.gif" speed="1"></x-gif>
-			<input type="range" min="0" max="5" step="0.1">
-		</div>
+		<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">Diplomacy Games</a></li>
+                <li><a href="#twtc">To Widen the Community</a></li>
+                <li><a href="#die">Die</a></li>
+                <li><a href="#jmcsmf">Jet Meme Can't Steal Melt Fuel</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<h1>Diplomacy Games</h1>
+						<hr>
+						<div class="gif-container">
+							<h2 id="twtc">To Widen the Community - March 21 2016</h2>
+							<h3>Victor: Will, Turkey</h3>
+							<video src="assets\twtc.mp4" controls></video>
+						</div>
+						<hr>
+						<div class="gif-container">
+							<h2 id="die">Die - April 26 2015</h2>
+							<h3>Victor: Trey, Brazil</h3>
+							<video src="assets\die.mp4" controls></video>
+						</div>
+						<hr>
+						<div class="gif-container">
+							<h2 id="jmcsmf">Jet Meme Can't Steal Melt Fuel - March 29 2016</h2>
+							<h3>Victor: Will, Russia</h3>
+							<video src="assets\jmcsmf.mp4" controls></video>
+						</div>
+						<div id="dumb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
 	</body>
 </html>
