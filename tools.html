@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Diplomacy Games</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="script.js"></script>
+		<script src="jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="/diplomacy/index.html">Diplomacy Games</a></li>
+				<hr>
+                <li class="sidebar-brand"><a href="#">Diplomacy Tools</a></li>
+                <li><a href="#bpo">Backstabbr Phase Opener</a></li>
+                <li><a href="#vhto">Vdiplomacy History to Orders</a></li>
+				
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<h1>Diplomacy Tools</h1>
+						<hr>
+						<div class="gif-container">
+							<h2 id="bpo">Backstabbr Phase Opener</h2>
+							<form>
+								<input id="blink" type="text" style="width:750px;" placeholder="Game Link">
+								<input id="byear" type="number" style="width:100px;" placeholder="Ending Year">
+								<br>
+								<button onclick="getLinks(blink.value, byear.value)">Get Links</button>
+								<button>Open Windows</button>
+							</form>
+							<br>
+							<p>Number: </p>
+							<p id="linkOutput"></p>
+						</div>
+						<div id="dumb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+	
+	<script>
+		function getLinks (blink, byear) {
+			for (var i = 1; i <= byear; i++) {
+				var y = "19" + (i.toString().length == 1 ? "0" + i.toString() : i.toString());
+				window.open(blink + "/" + y + "/spring", "_blank");
+				window.open(blink + "/" + y + "/fall", "_blank");
+			}
+			window.prompt("Copy to clipboard: Ctrl+C, Enter", 1 + d*2);
+		}
+	</script>
+	
+	</body>
+</html>
