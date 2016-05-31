@@ -29,8 +29,59 @@ hr {
 	border-color:black !important;
 }
 
+h2 .icon {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 3px;
+	margin-top: 0px;
+	position: relative;
+	top: -3px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.icon {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 2px;
+	margin-top: 0px;
+	position: relative;
+	top: -1.5px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.icon.iba {background-color:#CC0000}
+.icon.ibe {background-color:#0000AA}
+.icon.ibf {background-color:#9999FF}
+.icon.ibg {background-color:#000000}
+.icon.ibi {background-color:#00AA00}
+.icon.ibr {background-color:#BB00BB}
+.icon.ibt {background-color:#BBBB00}
+
+.icon.iva {background-color:#C48F85}
+.icon.ive {background-color:#EFC4E4}
+.icon.ivf {background-color:#79AFC6}
+.icon.ivg {background-color:#A08A75}
+.icon.ivi {background-color:#A4C499}
+.icon.ivr {background-color:#A87E9F}
+.icon.ivt {background-color:#EAEAAF}
+
+.icon.ivr2 {background-color:#B12A2E}
+.icon.ivf2 {background-color:#EF4658}
+.icon.ivbritain2 {background-color:#0C87F8}
+.icon.ivbrazil {background-color:#5EBD07}
+.icon.ivholland {background-color:#13C7B6}
 
 
+
+#page-content-wrapper hr {
+	margin-bottom:25px !important;
+}
 
 #wrapper {
     padding-left: 0;
